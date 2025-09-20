@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skills</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; background: #f0f4f8; }
+    
+    /* Gradient Header */
+    header { 
+      background: linear-gradient(90deg, #6a11cb, #2575fc); 
+      color: white; padding: 25px; text-align: center; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 { margin: 0; font-size: 28px; letter-spacing: 1px; }
+
+    /* Navbar */
+    nav { background: #333; padding: 10px; text-align: center; }
+    nav a { color: white; text-decoration: none; margin: 15px; font-weight: bold; transition: 0.3s; }
+    nav a:hover { color: #6a11cb; transform: scale(1.1); }
+
+    h2 { text-align:center; margin-top: 20px; color: #222; }
+
+    /* Skills Container */
+    .skills { width: 80%; margin: 20px auto; }
+
+    .skill {
+      margin: 20px 0;
+    }
+
+    .skill-name {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Colorful skill bars */
+    .skill-bar {
+      background: #ddd;
+      border-radius: 12px;
+      height: 25px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .skill-fill {
+      height: 100%;
+      border-radius: 12px;
+      line-height: 25px;
+      color: white;
+      text-align: right;
+      padding-right: 10px;
+      font-weight: bold;
+      transition: width 1s ease-in-out;
+    }
+
+    /* Different colors for each skill */
+    .html { background: #e44d26; width: 0%; }
+    .css { background: #264de4; width: 0%; }
+    .js { background: #f0db4f; color: #111; width: 0%; }
+    .python { background: #306998; width: 0%; }
+
+    footer { background: #333; color: white; text-align:center; padding: 15px; margin-top: 20px; }
+
+  </style>
+</head>
+<body>
+  <header><h1>My Skills</h1></header>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <h2>My Skill Levels</h2>
+
+  <div class="skills">
+    <div class="skill">
+      <div class="skill-name">HTML <span>95%</span></div>
+      <div class="skill-bar"><div class="skill-fill html">95%</div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">CSS <span>90%</span></div>
+      <div class="skill-bar"><div class="skill-fill css">90%</div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">JavaScript <span>85%</span></div>
+      <div class="skill-bar"><div class="skill-fill js">85%</div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">Python <span>80%</span></div>
+      <div class="skill-bar"><div class="skill-fill python">80%</div></div>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Ahamed Gani Fathima Nuha | Student Portfolio</footer>
+
+  <script>
+    // Animate skill bars on page load
+    window.onload = () => {
+      document.querySelector('.html').style.width = '95%';
+      document.querySelector('.css').style.width = '90%';
+      document.querySelector('.js').style.width = '85%';
+      document.querySelector('.python').style.width = '80%';
+    }
+  </script>
+</body>
+</html>

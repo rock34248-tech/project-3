@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; background: #f0f4f8; }
+    
+    /* Gradient Header */
+    header { 
+      background: linear-gradient(90deg, #ff7e5f, #feb47b); 
+      color: white; padding: 25px; text-align: center; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    header h1 { margin: 0; font-size: 28px; letter-spacing: 1px; }
+    
+    /* Navbar */
+    nav { background: #333; padding: 10px; text-align: center; }
+    nav a { color: white; text-decoration: none; margin: 15px; font-weight: bold; transition: 0.3s; }
+    nav a:hover { color: #ff7e5f; transform: scale(1.1); }
+    
+    h2 { text-align:center; margin-top: 20px; color: #222; }
+    
+    /* Projects Grid */
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      width: 90%;
+      margin: auto;
+    }
+    
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+    
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 4px solid #ff7e5f;
+    }
+    
+    .project-content {
+      padding: 15px;
+      flex: 1;
+    }
+    
+    .project-content h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #ff7e5f;
+    }
+    
+    .project-content p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    
+    .project-content a {
+      text-decoration: none;
+      background: #ff7e5f;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    
+    .project-content a:hover {
+      background: #feb47b;
+      transform: scale(1.05);
+    }
+    
+    footer { background: #333; color: white; text-align:center; padding: 15px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header><h1>My Colorful Projects</h1></header>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+  
+  <h2>Featured Projects</h2>
+  
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1581091215364-2c29f84d05ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNjA3fDB8MHxzZWFyY2h8MXx8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&q=80&w=400" alt="Portfolio Website">
+      <div class="project-content">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website to showcase skills, projects, and resume with colorful design.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1590608897129-79f59c7d3a6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Todo List App">
+      <div class="project-content">
+        <h3>Todo List App</h3>
+        <p>A colorful JavaScript web app for daily task management with CRUD functionality.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Weather App">
+      <div class="project-content">
+        <h3>Weather App</h3>
+        <p>A responsive app fetching weather data from API and displaying current conditions with icons.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Calculator App">
+      <div class="project-content">
+        <h3>Calculator App</h3>
+        <p>A fun colorful calculator built with HTML, CSS, and JS for all basic arithmetic operations.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </div>
+  
+  <footer>&copy; 2025 John Doe | Student Portfolio</footer>
+</body>
+</html>
